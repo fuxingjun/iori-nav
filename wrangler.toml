@@ -27,13 +27,14 @@ FOOTER_TEXT = "曾梦想仗剑走天涯"
 # =================================================================
 #  CLOUDFLARE PAGES DEPLOYMENT CONFIGURATION
 #  - This section is used for the "Deploy to Cloudflare" button.
+#  - It uses the "production" environment, which is supported by Pages.
 # =================================================================
-[env.pages]
+[env.production]
 
-[[env.pages.d1_databases]]
+[[env.production.d1_databases]]
 binding = "NAV_DB"
 database_name = "book"
 database_id = "" # This is correct for Pages deployment
 
-[[env.pages.kv_namespaces]]
+[[env.production.kv_namespaces]]
 binding = "NAV_AUTH" # The `id` field is intentionally omitted for Pages deployment
