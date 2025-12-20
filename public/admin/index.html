@@ -400,18 +400,28 @@
                         </div>
                     </div>
 
+                    <div class="mt-4 p-3 bg-blue-50 rounded border border-blue-100 text-xs text-blue-800">
+                        <p class="font-bold mb-1">关于字体可用性：</p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><strong>通用字体 (Sans/Serif)</strong>：所有设备均可用，最安全。</li>
+                            <li><strong>系统字体 (微软雅黑/宋体等)</strong>：依赖用户设备是否安装。例如"微软雅黑"在 Mac 上可能无效。</li>
+                            <li><strong>Web 字体 (Roboto/Lato等)</strong>：需要通过上方的"自定义字体资源"引入 CSS 链接才生效，否则回退到默认。</li>
+                        </ul>
+                    </div>
+
                     <datalist id="fontFamilySuggestions">
-                        <option value="sans-serif">Sans Serif (无衬线)</option>
-                        <option value="serif">Serif (衬线)</option>
-                        <option value="monospace">Monospace (等宽)</option>
-                        <option value="'Microsoft YaHei', sans-serif">微软雅黑</option>
-                        <option value="'SimSun', serif">宋体</option>
-                        <option value="'Segoe UI', sans-serif">Segoe UI</option>
-                        <option value="'Roboto', sans-serif">Roboto</option>
-                        <option value="'Open Sans', sans-serif">Open Sans</option>
-                        <option value="'Lato', sans-serif">Lato</option>
-                        <option value="'Noto Sans SC', sans-serif">Noto Sans SC</option>
-                        <option value="'Noto Serif SC', serif">Noto Serif SC</option>
+                        <option value="sans-serif">Sans Serif (通用无衬线 - 安全)</option>
+                        <option value="serif">Serif (通用衬线 - 安全)</option>
+                        <option value="monospace">Monospace (通用等宽 - 安全)</option>
+                        <option value="'Microsoft YaHei', sans-serif">微软雅黑 (Windows 常见)</option>
+                        <option value="'SimSun', serif">宋体 (Windows 常见)</option>
+                        <option value="'PingFang SC', sans-serif">苹方 (Mac 常见)</option>
+                        <option value="'Segoe UI', sans-serif">Segoe UI (Windows 系统)</option>
+                        <option value="'Roboto', sans-serif">Roboto (需 Web 引入)</option>
+                        <option value="'Open Sans', sans-serif">Open Sans (需 Web 引入)</option>
+                        <option value="'Lato', sans-serif">Lato (需 Web 引入)</option>
+                        <option value="'Noto Sans SC', sans-serif">Noto Sans SC (首页默认已引入)</option>
+                        <option value="'Noto Serif SC', serif">Noto Serif SC (需 Web 引入)</option>
                     </datalist>
 
                 </div>

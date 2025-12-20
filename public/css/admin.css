@@ -988,6 +988,21 @@ input:checked + .slider:before {
   border: 1px solid rgba(255, 255, 255, 0.8) !important;
 }
 
+/* Fix: Ensure datalist arrow is visible */
+input[list]::-webkit-calendar-picker-indicator {
+  display: block !important;
+  opacity: 1 !important;
+  cursor: pointer;
+  height: 1.25em;
+  width: 1.25em;
+  padding: 2px;
+}
+
+input[list]:hover::-webkit-calendar-picker-indicator {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
 /* ========================================= */
 /* 风格二 (Style 2): 垂直布局 - Copied from style.css */
 /* ========================================= */
